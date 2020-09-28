@@ -1,0 +1,14 @@
+GET  http://localhost:3000/cats/cat/3
+
+###
+
+GET  http://localhost:3000/cats
+
+###
+POST http://localhost:3000/cats
+Content-Type: application/json
+
+{
+    "name": "emilio",
+    "age": 7
+}
