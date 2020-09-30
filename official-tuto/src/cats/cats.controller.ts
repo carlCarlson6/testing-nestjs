@@ -23,7 +23,6 @@ export class CatsController {
 
     @Post()
     async create(@Body() createCatDto: CreateCatDto, @Res() response: Response<ICat>): Promise<Response<ICat>> {
-        console.log(createCatDto);
         const createdCat: ICat = this.catsService.Create(createCatDto);
 
         return response.status(HttpStatus.CREATED).send(createdCat);
